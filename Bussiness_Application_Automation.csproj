@@ -20,6 +20,11 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Folder Include="Common\" />
+    <Folder Include="Config\" />
+    <Folder Include="Hooks\" />
+    <Folder Include="TestDataObjects\" />
+    <Folder Include="TestCases\" />
     <Folder Include="Utilities\" />
   </ItemGroup>
 

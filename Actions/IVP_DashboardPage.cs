@@ -69,6 +69,7 @@ namespace Bussiness_Application_Automation.Actions
             newProgram.Await_();
             newProgram.ClickProgramLink();
             newProgram.Await();
+            newProgram.validateProgramCodeOnEditScreen();
             newProgram.ClickNoteTab();
             newProgram.Await();
             newProgram.SaveProgram();

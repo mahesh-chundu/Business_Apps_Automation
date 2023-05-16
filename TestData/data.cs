@@ -4,13 +4,13 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Bussiness_Application_Automation
+namespace Bussiness_Application_Automation.TestData
 {
     internal class data
     {
         public string BaseUrl { get; set; }
-        public string Username{ get; set; }
-        public string Password { get; set; }    
+        public string Username { get; set; }
+        public string Password { get; set; }
         public string Approval { get; set; }
         public string Status { get; set; }
         public string StartDate { get; set; }

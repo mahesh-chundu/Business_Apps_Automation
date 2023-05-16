@@ -9,6 +9,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Collections.ObjectModel;
 using Newtonsoft.Json;
+using Bussiness_Application_Automation.TestData;
 
 namespace Bussiness_Application_Automation.Pages
 {
@@ -368,6 +369,13 @@ namespace Bussiness_Application_Automation.Pages
             Thread.Sleep(1000);
             IWebElement clickProgramLink = DriverManager.driver.FindElement(By.XPath("//td[@data-header='Program']//a"));
             clickProgramLink.Click();
+        }
+        [Test]
+        public void validateProgramCodeOnEditScreen()
+        {
+            IWebElement programCodeOnEditScreen = DriverManager.driver.FindElement(By.XPath("//label[@id='b4-Label_ProgramCode']//..//span//input"));
+            string programCodeValue = programCodeOnEditScreen.GetAttribute("value");
+            Assert.AreEqual(programCodeValue, inputValue);
         }
         [Test]
         public void ClickNoteTab()
